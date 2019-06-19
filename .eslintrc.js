@@ -22,13 +22,31 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/explicit-function-return-type': [
+      'warn',
+      {
+        allowExpressions: true,
+      },
+    ],
     'prettier/prettier': [
       'error',
       {
         singleQuote: true,
         semi: true,
         printWidth: 100,
+        trailingComma: 'all',
       },
     ],
   },
+  overrides: [
+    {
+      files: ['.eslintrc.js', 'webpack.config.js'],
+      env: {
+        node: true,
+      },
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
 };
