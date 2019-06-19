@@ -1,8 +1,7 @@
-import Spreadsheet = GoogleAppsScript.Spreadsheet.Spreadsheet;
 import { getDayFormat } from './util';
 
 export class SheetService {
-  static createInitialFile(prefix: string): Spreadsheet {
+  public static createInitialFile(prefix: string): GoogleAppsScript.Spreadsheet.Spreadsheet {
     const fileName = `${prefix} ${getDayFormat()}`;
     const ss = SpreadsheetApp.create(fileName);
     const range = ss.getRange('A1');

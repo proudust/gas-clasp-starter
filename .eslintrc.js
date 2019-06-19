@@ -5,20 +5,15 @@ module.exports = {
     'prettier',
     'prettier/@typescript-eslint',
   ],
-  plugins: [
-    '@typescript-eslint',
-    'googleappsscript',
-    'jest',
-    'prettier',
-  ],
+  plugins: ['@typescript-eslint', 'googleappsscript', 'jest', 'prettier'],
   env: {
     'googleappsscript/googleappsscript': true,
     'jest/globals': true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    'sourceType': 'module',
-    'project': './tsconfig.json',
+    sourceType: 'module',
+    project: './tsconfig.json',
   },
   rules: {
     '@typescript-eslint/indent': 'off',
