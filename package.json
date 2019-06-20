@@ -1,29 +1,15 @@
 {
   "name": "gas-clasp-starter",
   "version": "1.2.1",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts --fix .",
     "test": "jest",
     "build": "npm run lint && npm run test && rimraf dist && webpack && cpx src/appsscript.json dist",
     "deploy": "npm run build && clasp push"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/howdy39/gas-clasp-starter.git"
-  },
-  "keywords": [
-    "gas",
-    "google-apps-script",
-    "clasp"
-  ],
-  "author": "howdy39",
+  "author": "proudust",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/howdy39/gas-clasp-starter/issues"
-  },
-  "homepage": "https://github.com/howdy39/gas-clasp-starter#readme",
   "devDependencies": {
     "@google/clasp": "^2.1.0",
     "@types/google-apps-script": "0.0.53",
@@ -49,15 +35,6 @@
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(src/.+(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    }
   }
 }
