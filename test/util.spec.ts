@@ -1,5 +1,5 @@
-import { getDayFormat } from './util';
-jest.unmock('./util');
+import { getDayFormat } from '../src/util';
+jest.unmock('../src/util');
 
 describe('util', () => {
   describe('getDayFormat()', () => {
