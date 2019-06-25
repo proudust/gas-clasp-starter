@@ -16,7 +16,6 @@ module.exports = {
     project: './tsconfig.json',
   },
   rules: {
-    '@typescript-eslint/indent': 'off',
     '@typescript-eslint/explicit-function-return-type': [
       'warn',
       {
