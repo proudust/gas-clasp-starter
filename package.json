@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts --fix .",
     "test": "jest",
+    "test:watch": "jest --watch",
     "build": "npm run lint && npm run test && rimraf dist && webpack && cpx src/appsscript.json dist",
     "deploy": "npm run build && clasp push"
   },
