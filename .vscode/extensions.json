@@ -1,7 +1,16 @@
 {
-    "recommendations": [
-        "editorconfig.editorconfig",
-        "dbaeumer.vscode-eslint",
-        "visualstudioexptteam.vscodeintellicode",
-    ]
+  "recommendations": [
+    // ESLint
+    "dbaeumer.vscode-eslint",
+    // EditorConfig for VS Code
+    "editorconfig.editorconfig",
+    // Jest Runner
+    "firsttris.vscode-jest-runner",
+    // Test Explorer UI
+    "hbenl.vscode-test-explorer",
+    // Jest Test Explorer
+    "rtbenfield.vscode-jest-test-adapter",
+    // Test Explorer UI
+    "visualstudioexptteam.vscodeintellicode",
+  ]
 }
